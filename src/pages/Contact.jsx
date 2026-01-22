@@ -54,15 +54,21 @@ const Contact = () => {
         }
       });
 
-      // Marquee infinite scroll
+      // Marquee infinite scroll - smooth and seamless
       const marquee = marqueeRef.current;
       const marqueeContent = marquee.querySelector('.marquee-content');
       
+      // Calculate the width and set up smooth infinite scroll
+      const contentWidth = marqueeContent.offsetWidth / 2; // Divide by 2 because content is duplicated
+      
       gsap.to(marqueeContent, {
-        x: '-50%',
-        duration: 25,
+        x: -contentWidth,
+        duration: 20,
         ease: 'none',
         repeat: -1,
+        modifiers: {
+          x: gsap.utils.unitize(x => parseFloat(x) % contentWidth)
+        }
       });
 
     }, sectionRef);
@@ -168,13 +174,36 @@ const Contact = () => {
       {/* Marquee Strip */}
       <div ref={marqueeRef} className="absolute bottom-0 left-0 w-full overflow-hidden bg-[#D3FD50] py-4 md:py-5">
         <div className="marquee-content flex whitespace-nowrap text-black text-xl md:text-3xl font-medium">
-          <span className="inline-block mx-6 md:mx-8">AVAILABLE FOR FREELANCE</span>
-          <span className="inline-block mx-6 md:mx-8">•</span>
+          {/* First set */}
           <span className="inline-block mx-6 md:mx-8">OPEN TO OPPORTUNITIES</span>
           <span className="inline-block mx-6 md:mx-8">•</span>
-          <span className="inline-block mx-6 md:mx-8">AVAILABLE FOR FREELANCE</span>
+          <span className="inline-block mx-6 md:mx-8">LET'S BUILD TOGETHER</span>
           <span className="inline-block mx-6 md:mx-8">•</span>
+          
+          {/* Duplicate sets for seamless infinite loop */}
           <span className="inline-block mx-6 md:mx-8">OPEN TO OPPORTUNITIES</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          <span className="inline-block mx-6 md:mx-8">LET'S BUILD TOGETHER</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          
+          <span className="inline-block mx-6 md:mx-8">OPEN TO OPPORTUNITIES</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          <span className="inline-block mx-6 md:mx-8">LET'S BUILD TOGETHER</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          
+          <span className="inline-block mx-6 md:mx-8">OPEN TO OPPORTUNITIES</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          <span className="inline-block mx-6 md:mx-8">LET'S BUILD TOGETHER</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          
+          <span className="inline-block mx-6 md:mx-8">OPEN TO OPPORTUNITIES</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          <span className="inline-block mx-6 md:mx-8">LET'S BUILD TOGETHER</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          
+          <span className="inline-block mx-6 md:mx-8">OPEN TO OPPORTUNITIES</span>
+          <span className="inline-block mx-6 md:mx-8">•</span>
+          <span className="inline-block mx-6 md:mx-8">LET'S BUILD TOGETHER</span>
           <span className="inline-block mx-6 md:mx-8">•</span>
         </div>
       </div>
