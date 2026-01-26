@@ -12,7 +12,7 @@ const HomeHeroText = () => {
                 <div className='h-[7vw] w-[16vw] rounded-full -mt- overflow-hidden '>
                     <Video />
                 </div>
-                MERN Stack
+                frontend
             </div>
             <div className='hero-line lg:text-[9.5vw] text-[12vw] justify-center flex items-center uppercase lg:leading-[8vw] leading-[10vw]'>
            developer    
