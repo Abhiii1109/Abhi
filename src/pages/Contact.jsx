@@ -113,7 +113,7 @@ const Contact = () => {
                 href="tel:+917096585858" 
                 className="text-lg md:text-xl lg:text-2xl hover:text-gray-300 transition-colors block"
               >
-                +91 709658585
+                +91 7096581585
               </a>
             </div>
 
