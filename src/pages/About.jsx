@@ -71,7 +71,7 @@ const About = () => {
             <Word className="font-semibold">Prajapati,</Word>
             <Word>a</Word>
             <Word>passionate</Word>
-            <Word className="font-semibold">Frontend</Word>
+            <Word className="font-semibold">mern stack</Word>
             <Word className="font-semibold">Developer</Word>
             <Word>dedicated</Word>
             <Word>to</Word>
@@ -173,6 +173,9 @@ const About = () => {
             <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">Tailwind CSS</span>
             <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">JavaScript</span>
             <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">React.js</span>
+              <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">Node.js</span>
+              <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">Express.js</span>
+              <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">MongoDB</span>
             <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">C Language</span>
             <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">C++ With DSA</span>
             <span className="word skill-badge bg-white text-black px-6 py-3 rounded-2xl inline-block">Git</span>
