@@ -71,7 +71,7 @@ const About = () => {
             <Word className="font-semibold">Prajapati,</Word>
             <Word>a</Word>
             <Word>passionate</Word>
-            <Word className="font-semibold">mern stack</Word>
+            <Word className="font-semibold">Mern stack</Word>
             <Word className="font-semibold">Developer</Word>
             <Word>dedicated</Word>
             <Word>to</Word>
@@ -142,7 +142,7 @@ const About = () => {
             <Word>foundation</Word>
             <Word>in</Word>
             <Word>both</Word>
-            <Word>front-end</Word>
+            <Word>MERN Stack</Word>
             <Word>and</Word>
             <Word>programming</Word>
             <Word>fundamentals.</Word>
